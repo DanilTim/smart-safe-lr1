@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙️"
+        android:textSize="56sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Задать комбинацию"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Наклоняйте телефон влево, вправо, вверх или вниз.\nМинимум 3, максимум 8 движений."
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Легенда направлений -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⬅️ Влево  " android:textColor="#CCCCCC" android:textSize="13sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="➡️ Вправо  " android:textColor="#CCCCCC" android:textSize="13sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⬆️ Вверх  " android:textColor="#CCCCCC" android:textSize="13sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⬇️ Вниз" android:textColor="#CCCCCC" android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Записанная комбинация -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Записано:"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvRecordedCombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—"
+        android:textColor="#FFD700"
+        android:textSize="32sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Статус подсказка -->
+    <TextView
+        android:id="@+id/tvSetupStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Наклоняйте телефон, чтобы записать комбинацию"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Кнопки -->
+    <Button
+        android:id="@+id/btnClearCombo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Очистить"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnSaveCombo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="✅  Сохранить комбинацию"
+        android:backgroundTint="#1B5E20"
+        android:textColor="#FFFFFF"
+        android:enabled="false" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Gradle files
+.gradle/
+build/
+/local.properties
+
+# Android Studio
+.idea/
+*.iml
+.DS_Store
+
+# User-specific files
+local.properties
+
+# Generated files
+bin/
+gen/
+out/
+release/
+
+# Keystore files (ВАЖНО — не заливай ключи!)
+*.jks
+*.keystore
+
+# NDK
+obj/
+.externalNativeBuild/
+.cxx/
